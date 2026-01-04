@@ -2,10 +2,13 @@ backend:
   name: git-gateway
   branch: main
 
-local_backend: false
-
 media_folder: "assets/stories"
 public_folder: "/assets/stories"
+
+editor:
+  preview: false
+  tinymce:
+    apiKey: "tlxgh1hiy34s3h2mx3idq6nfpc0hqdkjq3xolge00dz6x1xq"
 
 collections:
   - name: "stories"
@@ -27,7 +30,7 @@ collections:
 
       - label: "Anotace"
         name: "annotation"
-        widget: "string"
+        widget: "text"
 
       - label: "Meta"
         name: "meta"
@@ -40,5 +43,5 @@ collections:
         required: false
 
       - label: "Text povídky"
-        name: "body"
-        widget: "markdown"
+        name: "content"
+        widget: "rich-text"
