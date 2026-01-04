@@ -20,9 +20,6 @@ collections:
       - { label: "Meta", name: "meta", widget: "string", required: false }
       - { label: "Obrázek", name: "image", widget: "image", required: false }
 
-      - label: "Obsah"
-        name: "content"
-        widget: "list"
-        fields:
-          - { label: "Typ", name: "type", widget: "select", options: ["p", "h2", "divider"] }
-          - { label: "Text", name: "text", widget: "text", required: false }
+- label: "Obsah"
+  name: "content"
+  widget: "markdown"
