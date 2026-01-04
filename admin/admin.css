@@ -1,0 +1,11 @@
+/* odsazení CMS od okrajů */
+.nc-app {
+  padding: 1.5rem 2rem !important;
+}
+
+/* lehké omezení šířky obsahu */
+.nc-collectionPage-main,
+.nc-entryEditor {
+  max-width: 1100px;
+  margin: 0 auto;
+}
