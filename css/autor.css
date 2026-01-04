@@ -1,0 +1,45 @@
+.author-wrapper {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+/* FOTO */
+
+.author-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+}
+
+/* TEXT */
+
+.author-text h1 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+.author-text p {
+  margin-bottom: 1rem;
+  max-width: 520px;
+}
+
+/* MOBIL */
+
+@media (max-width: 700px) {
+  .author-wrapper {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .author-photo {
+    max-width: 240px;
+  }
+}

@@ -1,0 +1,61 @@
+.stories-wrapper {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+/* JEDNA POVÍDKA */
+
+.story-link {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 1.8rem;
+  align-items: start;
+
+  text-decoration: none;
+  color: inherit;
+}
+
+/* OBRÁZEK */
+
+.story-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+}
+
+/* TEXT */
+
+.story-text h2 {
+  margin: 0 0 0.4rem;
+  font-size: 1.4rem;
+}
+
+.story-text p {
+  margin: 0;
+  max-width: 520px;
+  opacity: 0.85;
+}
+
+/* HOVER */
+
+.story-link:hover h2 {
+  text-decoration: underline;
+}
+
+/* MOBIL */
+
+@media (max-width: 700px) {
+  .story-link {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .story-text p {
+    max-width: none;
+  }
+}

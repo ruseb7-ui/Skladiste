@@ -1,0 +1,57 @@
+.audio-wrapper {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* JEDNA AUDIOPOVÍDKA */
+
+.audio-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+/* VIDEO */
+
+.audio-player {
+  position: relative;
+  padding-top: 56.25%; /* 16:9 */
+}
+
+.audio-player iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
+
+/* TEXT */
+
+.audio-text h2 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1.4rem;
+}
+
+.audio-text p {
+  max-width: 420px;
+}
+
+/* MOBIL */
+
+@media (max-width: 700px) {
+  .audio-item {
+    grid-template-columns: 1fr;
+  }
+
+  .audio-text p {
+    max-width: none;
+  }
+}

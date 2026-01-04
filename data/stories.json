@@ -1,0 +1,48 @@
+[
+  {
+    "id": "skladiste-01",
+    "title": "První povídka",
+    "annotation": "Krátká anotace první povídky. Něco mezi humorem a lehkým neklidem.",
+    "image": "assets/stories/povidka-1.jpg",
+    "meta": "2024 · sci-fi",
+    "content": [
+      {
+        "type": "p",
+        "text": "První odstavec povídky. Text plyne pomalu a klidně."
+      },
+      {
+        "type": "p",
+        "text": "Druhý odstavec. Už tady se ukazuje rytmus čtení."
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "h2",
+        "text": "Kapitola I"
+      },
+      {
+        "type": "p",
+        "text": "Začátek kapitoly. Žádný spěch."
+      }
+    ]
+  },
+
+  {
+    "id": "skladiste-02",
+    "title": "Druhá povídka",
+    "annotation": "Temnější povídka s ironickým podtónem.",
+    "image": "assets/stories/povidka-2.jpg",
+    "meta": "2023 · horor",
+    "content": [
+      {
+        "type": "p",
+        "text": "Začíná to nenápadně."
+      },
+      {
+        "type": "p",
+        "text": "A pak už není cesty zpět."
+      }
+    ]
+  }
+]

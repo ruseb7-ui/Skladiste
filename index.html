@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skladiště</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body class="light komfort">
+
+<!-- HORNÍ LIŠTA -->
+<header class="top-bar">
+
+  <div class="left-controls">
+    <button onclick="toggleTheme()" title="Světlý / tmavý režim">🌙</button>
+    <button onclick="toggleReading()" title="Komfort / kompaktní">🖋</button>
+  </div>
+
+  <div class="right-controls">
+    <a href="https://facebook.com" target="_blank" title="Facebook">📘</a>
+    <a href="https://instagram.com" target="_blank" title="Instagram">📸</a>
+  </div>
+
+</header>
+
+<!-- BANNER -->
+<section class="banner-wrapper">
+  <img
+    src="assets/banners/home-light.png"
+    data-light="assets/banners/home-light.png"
+    data-dark="assets/banners/home-dark.png"
+    class="theme-img banner-img"
+    alt="Skladiště">
+</section>
+
+<!-- DLAŽDICE -->
+<main class="tiles-grid">
+
+  <a href="povidky.html" class="tile">
+    <img
+      src="assets/tiles/povidky-light.png"
+      data-light="assets/tiles/povidky-light.png"
+      data-dark="assets/tiles/povidky-dark.png"
+      class="theme-img tile-img"
+      alt="Povídky">
+  </a>
+
+  <a href="audiopovidky.html" class="tile">
+    <img
+      src="assets/tiles/audiopovidky-light.png"
+      data-light="assets/tiles/audiopovidky-light.png"
+      data-dark="assets/tiles/audiopovidky-dark.png"
+      class="theme-img tile-img"
+      alt="Audiopovídky">
+  </a>
+
+  <a href="autor.html" class="tile">
+    <img
+      src="assets/tiles/autor-light.png"
+      data-light="assets/tiles/autor-light.png"
+      data-dark="assets/tiles/autor-dark.png"
+      class="theme-img tile-img"
+      alt="Autor">
+  </a>
+
+  <a href="obchod.html" class="tile">
+    <img
+      src="assets/tiles/obchod-light.png"
+      data-light="assets/tiles/obchod-light.png"
+      data-dark="assets/tiles/obchod-dark.png"
+      class="theme-img tile-img"
+      alt="Obchod">
+  </a>
+
+</main>
+
+<script src="js/main.js"></script>
+</body>
+</html>

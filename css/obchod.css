@@ -1,0 +1,75 @@
+.shop-wrapper {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+}
+
+/* PRODUKT */
+
+.product-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+/* OBRÁZEK */
+
+.product-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+}
+
+/* TEXT */
+
+.product-text h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.product-text p {
+  margin-bottom: 1rem;
+  max-width: 420px;
+}
+
+/* TLAČÍTKO */
+
+.buy-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.4rem;
+  border-radius: 999px;
+  font-weight: bold;
+  text-decoration: none;
+
+  background-color: #6b1f2b; /* vínová */
+  color: #fff;
+  transition: background-color 0.25s ease;
+}
+
+body.dark .buy-button {
+  background-color: #4f6fa1; /* modrošedá */
+}
+
+.buy-button:hover {
+  background-color: #8a2a39;
+}
+
+body.dark .buy-button:hover {
+  background-color: #6888c2;
+}
+
+/* MOBIL */
+
+@media (max-width: 700px) {
+  .product-item {
+    grid-template-columns: 1fr;
+  }
+
+  .product-text p {
+    max-width: none;
+  }
+}

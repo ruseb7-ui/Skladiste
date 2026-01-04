@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Editor povídek – administrace</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.tiny.cloud/1/tlxgh1hiy34s3h2mx3idq6nfpc0hqdkjq3xolge00dz6x1xq/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+</head>
+<body class="komfort">
+
+<header>
+  <h1>Editor povídek</h1>
+</header>
+
+<section id="editor-section">
+  <h2>Přidat novou povídku</h2>
+  <label>Název:</label><br>
+  <input type="text" id="title" style="width:100%;"><br>
+  <label>Anotace:</label><br>
+  <textarea id="description" rows="2" style="width:100%;"></textarea><br>
+  <label>Obsah:</label>
+  <textarea id="editor"></textarea><br>
+  <button onclick="saveStory()">Uložit povídku</button>
+  <button onclick="previewStory()">Náhled</button>
+  <div id="preview" style="border:1px solid #ccc; padding:1rem; margin-top:1rem;"></div>
+</section>
+
+<footer>
+  <button onclick="toggleDark()">🌙 Tmavý/Světlý režim</button>
+  <button onclick="toggleLayout()">🖋 Komfort/Kompakt</button>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+tinymce.init({
+  selector:'#editor',
+  height:300,
+  plugins:'link image media',
+  toolbar:'undo redo | bold italic underline | alignleft aligncenter alignright | link image media | bullist numlist',
+  menubar:false
+});
+
+// jednoduché heslo pro administraci
+const editorPassword = '1793';
+const access = prompt('Zadej heslo pro přístup do editoru:');
+if(access !== editorPassword){
+  alert('Špatné heslo. Editor nebude zobrazen.');
+  document.getElementById('editor-section').style.display='none';
+}
+
+updateStoryList();
+</script>
+
+</body>
+</html>

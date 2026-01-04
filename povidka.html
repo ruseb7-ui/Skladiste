@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Povídka</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/ctecka.css">
+</head>
+
+<body class="light komfort" oncontextmenu="return false">
+
+<header class="top-bar">
+  <div class="left-controls">
+    <a href="povidky.html" class="back-home">←</a>
+    <button onclick="toggleTheme()">🌙</button>
+    <button onclick="toggleReading()">🖋</button>
+  </div>
+  <div class="right-controls">
+    <a href="#">📘</a>
+    <a href="#">📸</a>
+  </div>
+</header>
+
+<section class="banner-wrapper">
+  <img src="assets/banners/povidky-light.png"
+       data-light="assets/banners/povidky-light.png"
+       data-dark="assets/banners/povidky-dark.png"
+       class="theme-img banner-img"
+       alt="Povídka">
+</section>
+
+<main class="reader-wrapper">
+  <article class="story" id="storyContent">
+    <!-- obsah se vloží automaticky -->
+  </article>
+</main>
+
+<script src="js/main.js"></script>
+<script src="js/ctecka.js"></script>
+
+<script>
+  document.addEventListener('copy', e => e.preventDefault());
+  document.addEventListener('cut', e => e.preventDefault());
+</script>
+
+</body>
+</html>

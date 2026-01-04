@@ -1,0 +1,68 @@
+.reader-wrapper {
+  max-width: 720px;        /* KLÍČOVÁ ŠÍŘKA PRO DLOUHÝ TEXT */
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+/* TITUL */
+
+.story h1 {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+  font-size: 2rem;
+}
+
+/* META */
+
+.story-meta {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  margin-bottom: 2rem;
+}
+
+/* ODSTAVCE */
+
+.story p {
+  margin-bottom: 1.2rem;
+}
+
+/* KAPITOLY */
+
+.story h2 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+/* ODDĚLOVAČ */
+
+.story-divider {
+  border: none;
+  height: 3px;
+  width: 60px;
+  margin: 3rem auto;
+  background-color: currentColor;
+  opacity: 0.4;
+}
+
+/* KOMFORT / KOMPAKT */
+
+body.komfort .story p {
+  line-height: 1.9;
+}
+
+body.kompakt .story p {
+  line-height: 1.5;
+}
+
+/* MOBIL */
+
+@media (max-width: 700px) {
+  .reader-wrapper {
+    padding-top: 2rem;
+  }
+
+  .story h1 {
+    font-size: 1.6rem;
+  }
+}
