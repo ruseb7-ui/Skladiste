@@ -1,0 +1,25 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/stories"
+public_folder: "/assets/stories"
+
+collections:
+  - name: "stories"
+    label: "Povídky"
+    folder: "data/stories"
+    create: true
+    slug: "{{slug}}"
+    extension: "json"
+    format: "json"
+    fields:
+      - { label: "ID", name: "id", widget: "string" }
+      - { label: "Název", name: "title", widget: "string" }
+      - { label: "Anotace", name: "annotation", widget: "text" }
+      - { label: "Meta", name: "meta", widget: "string", required: false }
+      - { label: "Obrázek", name: "image", widget: "image", required: false }
+
+- label: "Obsah"
+  name: "content"
+  widget: "markdown"
